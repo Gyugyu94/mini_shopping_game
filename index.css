@@ -1,0 +1,41 @@
+body {
+    background-color: #353b48;
+    display: flex;
+    justify-content: center;
+}
+.top {
+    display: flex;
+    justify-content: center;
+}
+
+.contents {
+    margin-top: 50px;
+    width: 450px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.clothes-picker {
+    width: 45px;
+}
+
+.color-picker {
+    padding: 10px;
+    font-weight: 500;
+}
+
+.blue {
+    background-color: #0097e6;
+}
+
+.yellow {
+    background-color: #fbc531;
+}
+
+.pink {
+    background-color: #fd79a8;
+}
