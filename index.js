@@ -5,11 +5,11 @@ class clothe {
         this.gender = gender;
         this.color = color;
         this.size = size;
-        this.img = this.makeImgPath();
+        this.makeImgPath();
     }
     makeImgPath = () => {
         const firstSpellingOfKind = this.kind.slice(0, 1);
-        return `./imgs/${this.color}_${firstSpellingOfKind}.png`;
+        this.img = `./imgs/${this.color}_${firstSpellingOfKind}.png`;
     };
 }
 
@@ -54,7 +54,6 @@ makeItemList(clothesList);
 const registerEvent = (filters, option) => {
     for (let index = 0; index < filters.length; index++) {
         const filter = filters[index];
-        console.log(filter);
         filter.addEventListener("click", function () {
             const filterOption = this.getAttribute("option");
             const rusult = clothesList.filter((list) => list[option] === filterOption);
