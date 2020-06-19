@@ -7,10 +7,10 @@ class clothe {
         this.size = size;
         this.makeImgPath();
     }
-    makeImgPath = () => {
+    makeImgPath() {
         const firstSpellingOfKind = this.kind.slice(0, 1);
         this.img = `./imgs/${this.color}_${firstSpellingOfKind}.png`;
-    };
+    }
 }
 
 const clothesList = [
