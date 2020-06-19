@@ -13,13 +13,17 @@ body {
     width: 450px;
 }
 
-.filter {
+.filter-box{
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.filter {
+ 
     margin: 10px;
 }
 
-.clothes-picker {
+.clothes {
     width: 45px;
 }
 
@@ -38,4 +42,31 @@ body {
 
 .pink {
     background-color: #fd79a8;
+}
+
+.items{
+    height: 500px;
+    overflow: auto;
+}
+
+.items::-webkit-scrollbar{
+    display: none;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.item-clothe {
+    margin : 3px 20px;
+}
+
+.item-info{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
 }
